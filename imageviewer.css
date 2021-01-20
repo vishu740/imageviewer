@@ -1,0 +1,135 @@
+  .container{
+     
+      display:flex;
+      flex-direction: row;
+      width:100%;
+      margin-top:40px;
+
+    }
+    .container img{
+      width:300px;
+      height:300px;padding:10px 25px;
+    }
+    .image-view-model{
+        position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: rgba(0, 0, 0, 0.9) ;
+    opacity:0;
+    transition-duration: 0.5s;
+    display:none;
+
+    }
+    .image-view-model .overlay{
+       position: absolute;
+      top:0;
+      bottom:0;
+      left:0;
+      right:0;
+      
+    }
+     .image-view-model .overlay .imag{
+         position: absolute;
+      top:0;
+      bottom:0;
+      left:0;
+      right:0;
+      width:50%;
+      height:60%;
+      border:2px solid white;
+      
+      margin:auto;
+     
+     }
+       .image-view-model .overlay .imag img{
+        width:100%;
+        height:100%;
+        opacity: "0";
+        transition-duration: 0.5s;
+
+
+       }
+.close{
+ 
+  width:30px;
+  height:30px;
+
+}
+.close img{
+  position: absolute;
+   top:30px;
+      bottom:0;
+      left:85%;
+      right:0;
+  transform: translateX(100%);
+  width:25px;
+height: 25px;
+ 
+}
+.play{
+    position: absolute;
+      top:30px;
+      bottom:0;
+      left:8%;
+      right:0;
+       width:30px;
+  height:40px;
+  font-size: 30px;
+
+}
+.play img{
+  width:40px;
+height: 40px;
+ 
+}
+.next{
+  position: absolute;
+      top:85%;
+      bottom:0;
+      left:85%;
+      right:0;
+       width:20px;
+  height:40px;
+  font-size: 30px;
+
+}
+.next img{
+  width:35px;
+height: 35px;
+ 
+}.prev{
+   position: absolute;
+      top:85%;
+      bottom:0;
+      left:8%;
+      right:0;
+       width:30px;
+  height:40px;
+  font-size: 30px;
+
+}
+.prev img{
+  width:35px;
+height: 35px;
+  font-size: 40px;
+ 
+}
+.info{
+font-size: 30px;
+      margin-top:20px;
+      bottom:0;
+      left50%;
+      right:0;
+      color:white;
+
+}
+@media only scree and(max-width: 550px){
+  .close img{
+    font-size:500px;
+  }
+  .info{
+    font-size: 400px;
+  }
+}
